@@ -1,37 +1,37 @@
-# MyCode
+﻿# <center>vscode[![Fork me on Gitee](https://gitee.com/Hello-Chen/GIt_test/widgets/widget_6.svg)](https://gitee.com/Hello-Chen/GIt_test)</center>
 
-#### 介绍
-代码练习
+# 个人网站：[www.hello-chen.cn](http://www.hello-chen.cn/)
+![wlop](https://gitee.com/Hello-Chen/Hello-Chen_Pictures/raw/master/res/11.jpg)
 
-#### 软件架构
-软件架构说明
+## 该项目主要记录，日常语言的一些学习笔记
 
+## C language
 
-#### 安装教程
+    记录C Primer Plus学习笔记
+#### 链接: [2.11 复习题.md](https://github.com/Hello-Chen/vscode/blob/master/C%20language/C%20learning%20notes/2.11%20%E5%A4%8D%E4%B9%A0%E9%A2%98.md#211复习题) , [2.12 复习题.md](https://github.com/Hello-Chen/vscode/blob/master/C%20language/C%20learning%20notes/2.12%20%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0.md)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+----
 
-#### 使用说明
+## C# language
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+    记录C#学习笔记
 
-#### 参与贡献
+## Markdown
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+    记录Markdown语法
 
+## Mysql
 
-#### 码云特技
+    记录Mysql语法
+----
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![123](https://gitee.com/Hello-Chen/Hello-Chen_Pictures/raw/master/res/47.jfif)
+[Top](#%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99wwwhello-chencnhttpwwwhello-chencn)
+![sp-2020-2-4-21-30-0.jpg](https://hello-chen-1300561671.cos.ap-chengdu.myqcloud.com/github_vscode/sp-2020-2-4-21-30-0.jpg)
+
+## <center>![s](http://n.sinaimg.cn/sinacn/w444h250/20180305/9bf7-fxipenn1263440.gif)</center>
+
+## <center>[![Fork me on Gitee](https://gitee.com/Hello-Chen/GIt_test/widgets/widget_6.svg)](https://gitee.com/Hello-Chen/GIt_test)</center>
+
+[![Hello-Chen/vscode](https://gitee.com/Hello-Chen/vscode/widgets/widget_card.svg?colors=393222,ebdfc1,fffae5,d8ca9f,393222,a28b40)](https://gitee.com/Hello-Chen/vscode)
+

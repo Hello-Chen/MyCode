@@ -1,0 +1,18 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "limits.h": "c",
+        "stdlib.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "limits": "c",
+        "cstdio": "c"
+    },
+    "liveServer.settings.multiRootWorkspaceName": "vscode",
+    "cSpell.words": [
+        "",
+        "background",
+        "color"
+    ],
+    "liveServer.settings.port": 5501
+}

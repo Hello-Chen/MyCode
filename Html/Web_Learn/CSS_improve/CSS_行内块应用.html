@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            text-align: center;
+        }
+        .box a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+            background-color: aqua;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            line-height: 40px;
+            font-size: 14px;
+            color: #333;
+        }
+        .box .prev,
+        .box .next {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            background-color: aqua;
+        }
+        .box input {
+            width: 40px;
+            height: 40px;
+        }
+        .box button {
+            width: 40px;
+            height: 40px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#" class="prev"> &lt;&lt; 上一页</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">...</a>
+        <a href="#">6</a>
+        <a href="#"class="next">下一页 &gt;&gt;</a>
+        到第<input type="text">页
+        <button>确定</button>
+    </div>
+</body>
+</html>

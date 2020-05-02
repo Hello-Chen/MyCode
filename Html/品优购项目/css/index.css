@@ -1,3 +1,6 @@
+.style-red {
+    color: #C81623;
+}
 .main {
     width: 980px;
     height: 455px;
@@ -173,3 +176,36 @@
     border-right: 1px solid #ccc;
     margin: 10px 0;
 }
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+/* 家用电器 */
+.home_app_hd {
+    height: 30px;
+    border-bottom: 2px solid #C81623;
+    margin-top: 25px;
+}
+.home_app_hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    color: #C81623;
+}
+.home_app_hd .tab-list{
+    float: right;
+    line-height: 30px;
+}
+.home_app_hd .tab-list ul li {
+    float: left;
+}
+.home_app_hd .tab-list ul li a {
+    float: left;
+    padding: 0 15px;
+}
+/* 家电内容 */

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			img {
+				float: left;
+				height: 200px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="syy">
+			上一页
+		</button>
+		<img src="../images/1.gif" alt="" />
+		<button class="xyy">
+			下一页
+		</button>
+	</body>
+	<script>
+		var syy = document.querySelector(".syy");
+		var xyy = document.querySelector(".xyy");
+		var img = document.querySelector("img");
+		syy.onclick = function () {
+			img.src = "https://website-1300561671.cos.ap-chengdu.myqcloud.com/test/20190722-161719-c471.gif";
+			img.title = "1";
+		};
+		xyy.onclick = function () {
+			img.src = "https://website-1300561671.cos.ap-chengdu.myqcloud.com/test/20190722-165004-3b9a.gif";
+			img.title = "2";
+		};
+	</script>
+</html>

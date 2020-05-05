@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>显示隐藏密码</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1790290_8u74otvadap.css">
+    <style>
+        .box {
+            position: relative;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            margin: 100px auto;
+        }
+
+        .box input {
+            width: 170px;
+            height: 30px;
+            border-radius: 20px;
+            padding-left: 8px;
+            border: 0;
+            outline: none;
+        }
+
+        .box img {
+            position: absolute;
+            top: 2px;
+            right: 6px;
+            width: 24px;
+        }
+        i.iconfont {
+            position: absolute;
+            top: 2px;
+            right: 56px;
+            width: 24px;
+            font-size: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <label for="">
+            <img src="../images/close.png" alt="" id="eye">
+        </label>
+        <i class="iconfont icon-yanjing" ></i>
+        <input type="password" placeholder="请输入密码" id="pwd">
+    </div>
+    <script>
+        // 1. 获取元素
+        var eye = document.getElementById('eye');
+        var pwd = document.getElementById('pwd');
+        var yj = document.querySelector('.iconfont');
+        // 2. 注册事件 处理程序
+        var flag = 0;
+        yj.onmouseover = function() {
+            // 点击一次之后， flag 一定要变化
+            if (flag == 0) {
+                pwd.type = 'text';
+                eye.src = '../images/open.png';
+                yj.className='iconfont icon-yanjing';
+                flag = 1; // 赋值操作
+            } else {
+                pwd.type = 'password';
+                eye.src = '../images/close.png';
+                yj.className='iconfont icon-tingyong';
+                flag = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

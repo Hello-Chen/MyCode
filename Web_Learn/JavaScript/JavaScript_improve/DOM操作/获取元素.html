@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="box" id="big-box">
+			<ul>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		var boxs = document.getElementById("big-box");
+		console.log(boxs);
+		var lis = document.getElementsByTagName("li");
+		console.log(lis);
+		for (let i = 0; i < lis.length; i++){
+            console.log(lis[i]);
+        }
+		var boxs = document.getElementsByClassName("box");
+        console.log(boxs);
+        var bodyEle = document.body;
+        console.log(bodyEle);
+        var htmlEle = document.documentElement;
+        console.log(htmlEle);
+	</script>
+</html>

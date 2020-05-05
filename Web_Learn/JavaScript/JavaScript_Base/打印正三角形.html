@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>打印正三角形</title>
+		<script>
+			var str = "";
+			var rows = prompt("请输入行数");
+			var cols = prompt("请输入列数");
+			for (let i = 1; i <= rows; i++) {
+				for (let z = i; z <= cols; z++) {
+					// str += '&nbsp';
+					str += "★";
+				}
+				for (let j = 0; j < 2 * i - 1; j++) {
+					str += "☆";
+				}
+				str += "<br/>";
+			}
+			document.write(str);
+			for (let i = 1; i <= rows; i++) {
+				for (let z = 1; z <= i ; z++) {
+					// str += '&nbsp';
+					str += "★";
+				}
+				for (let j = i; j <= 9 + (i - 1) * (-1); j++) {
+					str += "☆";
+				}
+				str += "<br/>";
+			}
+			document.write(str);
+		</script>
+	</head>
+	<body></body>
+</html>

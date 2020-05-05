@@ -4,6 +4,13 @@
 
 int main(void)
 {
-    printf("Hello Chen\n");
+    int i = 0;
+    scanf("%d", &i);
+    while (i==1)
+    {
+        printf("sss");
+    }
+    
+    printf("%d",i);
 
 }

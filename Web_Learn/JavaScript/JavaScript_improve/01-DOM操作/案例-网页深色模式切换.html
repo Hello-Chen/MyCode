@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>网页深色模式切换</title>
+        <style>
+            body {
+                transition: background-color 2s;
+            }
+            .box {
+                border: 1px solid skyblue;
+                border-radius: 5px;
+                line-height: 15em;
+                text-align: center;
+                transition: all 5s;
+            }
+        </style>
+	</head>
+	<body>
+        <button>点击切换</button>
+        <div class="box">纸上得来终觉浅，绝知此事要躬行</div>
+	</body>
+	<script>
+        var mod = document.body;
+        var text = document.querySelector('.box');
+        // console.log(mod);
+        var flag = 0;
+        mod.onclick = function  () {
+            if (flag==0) {
+                document.body.style.backgroundColor='#000';
+                text.style.color='#fff';
+                flag=1;
+            }else{
+                document.body.style.backgroundColor='#fff';
+                text.style.color='#000';
+                flag=0;
+            }
+        }
+    </script>
+</html>

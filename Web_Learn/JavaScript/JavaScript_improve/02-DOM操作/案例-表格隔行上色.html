@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			table,
+			td {
+				margin: 0 auto;
+				border-collapse: collapse;
+				border: 1px solid #000;
+			}
+			td {
+				text-align: center;
+                cursor: pointer;
+			}
+			thead {
+				background-color: skyblue;
+			}
+            .bg {
+                background-color: red;
+            }
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<td colspan="6" width="1200px">
+						四川信息职业技术学院素质学分认证名单
+					</td>
+				</tr>
+				<tr>
+					<td colspan="6">项目名称:电影心得《中国机长》 项目时间:2019年12月</td>
+				</tr>
+				<tr>
+					<td>序号</td>
+					<td>学号</td>
+					<td>姓名</td>
+					<td>班级</td>
+					<td>系部</td>
+					<td>学分</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>19201020</td>
+					<td>徐鹏</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>19201064</td>
+					<td>邹江源</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>19201055</td>
+					<td>唐红翔</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>19201093</td>
+					<td>谢思瑶</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>19201101</td>
+					<td>刘毅</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>19201065</td>
+					<td>瓦张日则</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>19201045</td>
+					<td>杨海晨</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>19201026</td>
+					<td>贾子涛</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>19201021</td>
+					<td>钟美</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>19201108</td>
+					<td>李惠</td>
+					<td>通技2019级1班</td>
+					<td>电子工程系</td>
+					<td>0.5</td>
+				</tr>
+			</tbody>
+		</table>
+		<script>
+            var tables = document.querySelector('tbody').querySelectorAll('tr');
+            for (let i = 0; i < tables.length; i++) {
+                tables[i].onmouseover =function(){
+                    this.className = 'bg';
+                }
+                tables[i].onmouseout =function(){
+                    this.className = '';
+                }
+            }
+        </script>
+	</body>
+</html>

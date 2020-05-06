@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 200px;
+            height: 200px;
+            border: 0;
+            border-radius: 50%;
+            transition: all .75s;
+        }
+    </style>
+</head>
+<body>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+</body>
+<script>
+    var btns = document.getElementsByTagName('button');
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].onmouseover = function  () {
+            for (let j = 0; j < btns.length; j++) {
+                btns[j].style.backgroundColor='';
+            }
+            this.style.backgroundColor='blue';
+        }
+
+    }
+</script>
+</html>

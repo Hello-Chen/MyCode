@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.users {
+				font-size: 25px;
+				color: purple;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" class="user" id="" placeholder="输入用户名" />
+	</body>
+	<script>
+		var user = document.querySelector(".user");
+		console.log(user);
+		user.onfocus = function () {
+			this.placeholder = "";
+			this.style.outlineColor = "red";
+			this.className = "user users";
+        }
+        user.onblur = function  () {
+            if (this.value === '') {
+                this.placeholder = '输入用户名';
+            }
+            this.className = "user";
+        }
+	</script>
+</html>

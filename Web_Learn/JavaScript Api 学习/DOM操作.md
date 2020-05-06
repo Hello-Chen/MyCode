@@ -127,3 +127,42 @@ console.log(p.innerText);
 console.log(p.innerHTML);
 ```
 
+## 7. 表单属性操作
+
+```js
+// 1. 获取元素
+var btn = document.querySelector('button');
+var input = document.querySelector('input');
+// 2. 注册事件 处理程序
+btn.onclick = function() {
+// input.innerHTML = '点击了';  这个是 普通盒子 比如 div 标签里面的内容
+// 表单里面的值 文字内容是通过 value 来修改的
+input.value = '被点击了';
+// 如果想要某个表单被禁用 不能再点击 disabled  我们想要这个按钮 button禁用
+// btn.disabled = true;
+this.disabled = true;
+// this 指向的是事件函数的调用者 btn
+}
+```
+
+## 8. 通过className更改元素样式
+
+```js
+// 1. 使用 element.style 获得修改元素样式  如果样式比较少 或者 功能简单的情况下使用
+var test = document.querySelector('div');
+test.onclick = function() {
+// this.style.backgroundColor = 'purple';
+// this.style.color = '#fff';
+// this.style.fontSize = '25px';
+// this.style.marginTop = '100px';
+// 让我们当前元素的类名改为了 change
+
+// 2. 我们可以通过 修改元素的className更改元素的样式 适合于样式较多或者功能复杂的情况
+// 3. 如果想要保留原先的类名，我们可以这么做 多类名选择器
+// this.className = 'change';
+this.className = 'first change';
+}
+```
+
+![](https://hello-chen-1300561671.cos.ap-chengdu.myqcloud.com/web_learn/DOM操作DOM操作.png)
+

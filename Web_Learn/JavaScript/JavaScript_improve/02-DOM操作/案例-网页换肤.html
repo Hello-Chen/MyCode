@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background: url(https://website-1300561671.cos.ap-chengdu.myqcloud.com/test/20190719-100328-359b.gif)
+					no-repeat center top;
+				background-size: cover;
+			}
+			li {
+				float: left;
+				list-style: none;
+				cursor: pointer;
+			}
+			li img {
+				width: 120px;
+				height: 80px;
+				padding: 1px;
+				box-sizing: border-box;
+			}
+			.skin {
+				overflow: hidden;
+				margin: 100px auto;
+				width: 600px;
+				padding: 3px 0 0 0;
+				background-color: transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="skin">
+			<li>
+				<img
+					src="https://website-1300561671.cos.ap-chengdu.myqcloud.com/test/20190719-100328-359b.gif"
+					alt=""
+				/>
+			</li>
+			<li>
+				<img
+					src="https://website-1300561671.cos.ap-chengdu.myqcloud.com/test/20190722-160238-1056.gif"
+					alt=""
+				/>
+			</li>
+			<li>
+				<img
+					src="https://website-1300561671.cos.ap-chengdu.myqcloud.com/test/20190722-160529-88e9.gif"
+					alt=""
+				/>
+			</li>
+			<li>
+				<img
+					src="https://website-1300561671.cos.ap-chengdu.myqcloud.com/test/20190725-172149-e2db.gif"
+					alt=""
+				/>
+			</li>
+			<li>
+				<img
+					src="https://website-1300561671.cos.ap-chengdu.myqcloud.com/test/20190725-093136-699b.gif"
+					alt=""
+				/>
+			</li>
+		</ul>
+		<script>
+            var skins = document.querySelector(".skin").querySelectorAll("img");
+            console.log(skins);
+			for (let i = 0; i < skins.length; i++) {
+				skins[i].onclick = function () {
+					document.body.style.backgroundImage = 'url(' + this.src + ')';
+				};
+			}
+		</script>
+	</body>
+</html>

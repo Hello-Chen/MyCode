@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			table {
+				margin: 100px auto;
+				border-collapse: collapse;
+			}
+			td {
+				border: 1px solid #000;
+				text-align: center;
+			}
+			tbody tr:hover {
+				cursor: pointer;
+				background-color: #005500;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<td><input type="checkbox" name="" id="j_cbAll" /></td>
+					<td width="100px">id</td>
+					<td>name</td>
+					<td>age</td>
+					<td>gender</td>
+				</tr>
+			</thead>
+			<tbody id="j_tb">
+				<tr>
+					<td><input type="checkbox" name="" id="" /></td>
+					<td>1</td>
+					<td>Roberta</td>
+					<td>39</td>
+					<td>M</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" id="" /></td>
+					<td>2</td>
+					<td>Oliver</td>
+					<td>25</td>
+					<td>M</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" id="" /></td>
+					<td>3</td>
+					<td>Shayna</td>
+					<td>18</td>
+					<td>F</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" id="" /></td>
+					<td>4</td>
+					<td>Fechin</td>
+					<td>18</td>
+					<td>M</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<script>
+		//获取元素
+		var j_cbAll = document.getElementById("j_cbAll");
+		var j_tb = document.getElementById("j_tb").querySelectorAll("input");
+		//子元素跟随主元素状态改变
+		j_cbAll.onclick = function () {
+			for (let i = 0; i < j_tb.length; i++) {
+				j_tb[i].checked = this.checked;
+			}
+		};
+		// 遍历子元素状态，父元素根据子元素状态改变
+		for (let i = 0; i < j_tb.length; i++) {
+			j_tb[i].onclick = function () {
+				var flag = true;
+				for (let i = 0; i < j_tb.length; i++) {
+					if (!j_tb[i].checked) {
+						flag = false;
+						break;
+					}
+				}
+				j_cbAll.checked = flag;
+			};
+		}
+	</script>
+</html>

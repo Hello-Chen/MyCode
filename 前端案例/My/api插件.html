@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="//at.alicdn.com/t/font_1805171_36w1otebq31.css"
+    />
+    <script src="//at.alicdn.com/t/font_1805171_36w1otebq31.js"></script>
+    <style>
+      .icon {
+        width: 10em;
+        height: 10em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+        animation: loading-spin 1s linear infinite;
+      }
+      .icon:hover {
+        display: inline-block;
+        color: red;
+        transform: rotate(90deg);
+        transition: all 1s;
+      }
+      .icon-xihuan:hover {
+        display: inline-block;
+        font-size: 250px;
+        color: red;
+        transform: rotate(90deg);
+        transition: all 1s;
+        animation: loading-spin 1s linear infinite;
+      }
+      .icon-dengdai {
+        display: inline-block;
+        font-size: 80px;
+        color: red;
+        animation: loading-spin 1s linear infinite;
+
+      }
+
+      @keyframes loading-spin {
+        0% {
+          transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(1turn);
+          transform: rotate(1turn);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-yaopin"></use>
+    </svg>
+    <i class="iconfont icon-xihuan"></i>
+    <i class="iconfont icon-dengdai"></i>
+    <span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<!-- hellochen -->
+<script type="text/javascript">
+  WIDGET = {FID: 'nXiwYtQGoy'}
+  </script>
+  <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+  <script src="//code.tidio.co/7jyr0lsejpcihgwgwxkos1sf1kaaalys.js" async></script>
+  </body>
+</html>

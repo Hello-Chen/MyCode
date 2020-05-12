@@ -52,7 +52,7 @@
         var ul = document.querySelector('ul');
         // 2. 注册事件
         btn.onclick = function() {
-            if (text.value == '') {
+            if (text.value == ''&& '&nbsp;') {
                 alert('您没有输入内容');
                 return false;
             } else {

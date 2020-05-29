@@ -4,6 +4,7 @@
   // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+
     {
       "name": "使用本机 Chrome 调试",
       "type": "chrome",
@@ -34,7 +35,7 @@
       "environment": [],
       "externalConsole": true,
       "MIMode": "gdb",
-      "miDebuggerPath": "D:\\D_Software\\IDE_Code\\vscode\\mingw64\\bin\\gdb.exe",
+      "miDebuggerPath": "D:\\IDE_Code\\mingw64\\bin\\gdb.exe",
       "setupCommands": [
         {
           "description": "为 gdb 启用整齐打印",
